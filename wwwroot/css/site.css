@@ -1,0 +1,76 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+label {
+    border:none;
+}
+
+body {
+    background:linear-gradient(#75ddcd,#808080);
+  margin-bottom: 60px;
+}
+.ministerios{
+margin-top:2em
+
+
+}
+.col-md-4 {
+    margin-left:20px;
+    background-color: white;
+    width: 94% ;
+    margin-top:12px;
+    margin-bottom:4px;
+    height:92%;
+    border-radius:14px;
+    border : 2px solid  dotted
+
+}
+ .col-md-4 form {
+   
+    margin-top: 16px;
+  
+}
+    .form-group label {
+        color: orangered
+    }
+.row {
+    margin-left: 200px;
+    margin-top: 4px;
+   /* width: 700px;
+    height: 700px;*/
+    position: absolute;
+    border-radius: 12px;
+    background: linear-gradient(#6c6e80,#75ddcd)
+}
+
+form-group {
+    background:linear-gradient(#dd75b8,#f6a1a1)
+
+}
+.Ministerios:hover {
+
+
+    background-color: mistyrose;
+}
+
+#btnagregar {
+
+    border-radius: 12px;
+    font-family:Arial;
+    font-size:12px
+}
+h4 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    color:blue
+}
