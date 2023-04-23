@@ -84,6 +84,37 @@
               
 
             </table>
+
+            <table class="table">
+ <<thead>
+
+            <tr>
+                <th> Empresa</th>
+                <th>Anio Inicio</th>
+                <th>Anio Final</th>
+                <th><button id="btnagregar"type="button" onclick="AgregarCampos_Experiencia(this)"style=" background-color:green">Agrega nuevo registro</button></th>
+                </tr>
+
+                </thead>
+
+                @for(var j =0;j<Model.list_Experiencia_laboral.Count;j++){
+                
+                <tr>
+                  <td>@Html.EditorFor(e=>e.list_Experiencia_laboral[j].Nombre_Empresa, new{htmlAttributes= new {@class="form-control"}})</td>
+                  <span asp-validation-form="@Model.list_Experiencia_laboral[j].Nombre_Empresa" class="text-danger"></span>
+                  <td>@Html.EditorFor(e=>e.list_Experiencia_laboral[j], new{htmlAtributes=new {@class="form-control"} })</td>
+               
+              
+              <td>@Html.EditorFor(e=>e.list_Experiencia_laboral[j].Anio_inicio,new {htmlAttributes= new{@class="form-control"}})</td>
+              
+          <span asp-validation-form="@Model.list_Experiencia_laboral[j].Anio_inicio,class="form-control}"></span>
+      
+      
+      
+      </tr>
+                }
+
+            </table>
           
             <div class="form-group">
                 <input type="submit" value="Agregar Registro" class="btn btn-primary" />

@@ -27,6 +27,7 @@ namespace MisministrosCR_VERSION1.Controllers
         {
             Oferente of = new Oferente();
             of.titulos.Add(new Titulo (){ Anio_titulo = "0"});
+            of.list_Experiencia_laboral.Add(new Experiencia_trabajo() {Anio_inicio=0 });
             ViewBag.Ministerios = getMinisterios();
           
             return View(of);
