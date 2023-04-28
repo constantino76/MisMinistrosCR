@@ -84,7 +84,32 @@
               
 
             </table>
-          
+          <table class="table" id="tabla-explaboral">
+              <tr>
+
+
+<th>Nombre </th><th>Anio-Inicio</th><th>Anio fin</th>
+
+              </tr>
+             @for(int j=0;j<Model.list_Experiencia_laboral.Count;j++){
+             
+             
+             <tr>
+                 <td>@Html.EditorFor(e=>e.list_Experiencia_laboral[j].Nombre_Empresa,new {htmlAttributes= new {@class="form-control"}})</td>
+                 <span asp-validation-for="@Model.list_Experiencia_laboral[j] "class="text-danger"></span>
+
+
+                 <td>@Html.EditorFor(e=>e.list_Experiencia_laboral[j].Anio_inicio,new {htmlAttributes=new{@class="form-control"}})</td>
+            <span asp-validation-for="@Model.list_Experiencia_laboral[j].Anio_inicio" class="text-danger"></span>
+             
+            <td> @Html.EditorFor(e=>e.list_Experiencia_laboral[j].Anio_fin,new{htmlAttributes=new{@class="form-control"}})</td>
+            <span asp-validation-for="@Model.list_Experiencia_laboral[j].Anio_fin"class="text-danger"></span>
+        
+        </tr>
+             
+             }
+             j
+          </table>
             <div class="form-group">
                 <input type="submit" value="Agregar Registro" class="btn btn-primary" />
             </div>

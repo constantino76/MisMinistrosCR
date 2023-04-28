@@ -42,7 +42,10 @@ namespace MisministrosCR_VERSION1.Controllers
             ViewBag.Ministerios = getMinisterios();
             return RedirectToAction("Registro");
         }
-
+        public IActionResult EditarOferente(String id ="") { 
+        
+        return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
