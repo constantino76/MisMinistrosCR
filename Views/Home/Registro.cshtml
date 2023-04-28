@@ -2,7 +2,7 @@
 <label style{"border:none; text-align:center"}> Registro de Oferentes  </label>
 <hr />
 <div class="row" style="border:none">
-    <div class="col-md-4" style="border:none">
+    <div class="col-md-4" style="border:2px solid red">
         <form asp-action="Registro">
             <div  style ="border:none"asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -84,6 +84,7 @@
               
 
             </table>
+<<<<<<< HEAD
 
             <table class="table">
  <<thead>
@@ -116,6 +117,34 @@
 
             </table>
           
+=======
+          <table class="table" id="tabla-explaboral">
+              <tr>
+
+
+<th>Nombre </th><th>Anio-Inicio</th><th>Anio fin</th>
+
+              </tr>
+             @for(int j=0;j<Model.list_Experiencia_laboral.Count;j++){
+             
+             
+             <tr>
+                 <td>@Html.EditorFor(e=>e.list_Experiencia_laboral[j].Nombre_Empresa,new {htmlAttributes= new {@class="form-control"}})</td>
+                 <span asp-validation-for="@Model.list_Experiencia_laboral[j] "class="text-danger"></span>
+
+
+                 <td>@Html.EditorFor(e=>e.list_Experiencia_laboral[j].Anio_inicio,new {htmlAttributes=new{@class="form-control"}})</td>
+            <span asp-validation-for="@Model.list_Experiencia_laboral[j].Anio_inicio" class="text-danger"></span>
+             
+            <td> @Html.EditorFor(e=>e.list_Experiencia_laboral[j].Anio_fin,new{htmlAttributes=new{@class="form-control"}})</td>
+            <span asp-validation-for="@Model.list_Experiencia_laboral[j].Anio_fin"class="text-danger"></span>
+        
+        </tr>
+             
+             }
+             j
+          </table>
+>>>>>>> rama02
             <div class="form-group">
                 <input type="submit" value="Agregar Registro" class="btn btn-primary" />
             </div>
