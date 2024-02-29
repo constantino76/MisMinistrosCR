@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyectos_web\\MisministrosCR_VERSION1\\MisministrosCR_VERSION1.csproj": {}
+    "C:\\proyectosweb\\MisMinistrosCR\\MisministrosCR_VERSION1.csproj": {}
   },
   "projects": {
-    "C:\\Proyectos_web\\MisministrosCR_VERSION1\\MisministrosCR_VERSION1.csproj": {
+    "C:\\proyectosweb\\MisMinistrosCR\\MisministrosCR_VERSION1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyectos_web\\MisministrosCR_VERSION1\\MisministrosCR_VERSION1.csproj",
+        "projectUniqueName": "C:\\proyectosweb\\MisMinistrosCR\\MisministrosCR_VERSION1.csproj",
         "projectName": "MisministrosCR_VERSION1",
-        "projectPath": "C:\\Proyectos_web\\MisministrosCR_VERSION1\\MisministrosCR_VERSION1.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyectos_web\\MisministrosCR_VERSION1\\obj\\",
+        "projectPath": "C:\\proyectosweb\\MisMinistrosCR\\MisministrosCR_VERSION1.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\proyectosweb\\MisMinistrosCR\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -55,7 +56,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -67,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.311\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MisministrosCR_VERSION1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1e62bf1fbf69bcf179313e886c9d8940d0fabcb")]
 [assembly: System.Reflection.AssemblyProductAttribute("MisministrosCR_VERSION1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MisministrosCR_VERSION1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

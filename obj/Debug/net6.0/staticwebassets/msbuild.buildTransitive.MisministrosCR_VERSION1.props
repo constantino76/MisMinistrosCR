@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MisministrosCR_VERSION1.props" />
+</Project>
