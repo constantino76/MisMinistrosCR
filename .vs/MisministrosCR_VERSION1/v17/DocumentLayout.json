@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:views\\home\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\views\\home\\editaroferente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -72,14 +72,14 @@
               "RelativeDocumentMoniker": "Views\\Home\\Registro.cshtml",
               "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\Registro.cshtml",
               "RelativeToolTip": "Views\\Home\\Registro.cshtml",
-              "ViewState": "AQIAADEAAAAAAAAAAAAAADcAAAAZAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAAD4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-20T19:57:16.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -92,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Experiencia_trabajo.cs",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Models\\Experiencia_trabajo.cs",
               "RelativeDocumentMoniker": "Models\\Experiencia_trabajo.cs",
@@ -105,19 +105,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "site.js",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
               "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\js\\site.js",
               "RelativeToolTip": "wwwroot\\js\\site.js",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAABQAAAABAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-02-24T00:49:43.573Z"
+              "WhenOpened": "2024-02-24T00:49:43.573Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -129,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MisministrosCR_VERSION1.csproj",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\MisministrosCR_VERSION1.csproj",
               "RelativeDocumentMoniker": "MisministrosCR_VERSION1.csproj",
@@ -141,20 +142,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "site.css",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAABcAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-02-24T00:49:43.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
