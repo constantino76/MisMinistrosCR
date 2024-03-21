@@ -1,6 +1,3 @@
-html {
-  font-size: 14px;
-}
 
 @media (min-width: 768px) {
   html {
@@ -17,23 +14,22 @@ label {
 }
 
 body {
-    background:linear-gradient(#75ddcd,#808080);
-  margin-bottom: 60px;
+   background-image: url('/image/gradiente.jpg');
 }
 .ministerios{
 margin-top:2em
 
 
 }
-.col-md-4 {
+.col-md-6 {
     margin-left:20px;
-    background-color: white;
-    width: 94% ;
+    background-color: aliceblue;
+    /*width: 94% ;
     margin-top:12px;
     margin-bottom:4px;
     height:92%;
     border-radius:14px;
-    border : 2px solid  dotted
+    border : 2px solid  dotted*/
 
 }
  .col-md-4 form {
@@ -44,18 +40,10 @@ margin-top:2em
     .form-group label {
         color: orangered
     }
-.row {
-    margin-left: 200px;
-    margin-top: 4px;
-   /* width: 700px;
-    height: 700px;*/
-    position: absolute;
-    border-radius: 12px;
-    background: linear-gradient(#6c6e80,#75ddcd)
-}
+
 
 form-group {
-    background:linear-gradient(#dd75b8,#f6a1a1)
+    background-color: black !important
 
 }
 .Ministerios:hover {
@@ -71,6 +59,6 @@ form-group {
     font-size:12px
 }
 h4 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:blue
 }

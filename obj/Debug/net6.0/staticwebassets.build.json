@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FE6waTzUSLJSDY8pPMyhYgS0TQANvc19q0spOaxy4t4=",
+  "Hash": "uv/97PV9dQaJ6nzdiiSnqIvxGPbTH3CpqATU4XzWDNs=",
   "Source": "MisministrosCR_VERSION1",
   "BasePath": "_content/MisministrosCR_VERSION1",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\image\\gradiente.jpg",
+      "SourceId": "MisministrosCR_VERSION1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\",
+      "BasePath": "_content/MisministrosCR_VERSION1",
+      "RelativePath": "image/gradiente.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\gradiente.jpg"
     },
     {
       "Identity": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\js\\site.js",

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\image\\gradiente.jpg",
+      "PackagePath": "staticwebassets\\image\\gradiente.jpg"
+    },
+    {
       "Id": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
