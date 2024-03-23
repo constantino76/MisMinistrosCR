@@ -2,11 +2,11 @@
 <label style{"border:none; text-align:center"}> Registro de Oferentes  </label>
 <hr />
 <div class="row">
-    <div class="col-md-6" >
+    <div class="col-md-10" >
         <form asp-action="Registro">
             <div  style ="border:none"asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group"> 
-                     <label>Id</label>
+                    
                 <label asp-for="Id" class="control-label"></label>
                 <input asp-for="Id" class="form-control"  placeholder="Cedula"/>
                 <span asp-validation-for="Id" class="text-danger"></span>
@@ -28,7 +28,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Telefono" class="control-label"></label>
-                <input asp-for="Telefono" class="form-control" />
+                <input asp-for="Telefono" class="form-control" placeholder="Telefono" />
                 <span asp-validation-for="Telefono" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -38,11 +38,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="Estado" class="control-label"></label>
-                <input asp-for="Estado" class="form-control" value ="En proceso" readonly=faLse/>
+                <input asp-for="Estado" class="form-control" value ="En proceso" readonly/>
                 <span asp-validation-for="Estado" class="text-danger"></span>
             </div>
-            <h4 style="text-align:center">Informacion Academica</h4>
-            <table class="table" id="tabla">
+            <h4 >Informacion Academica</h4>
+            <table class="table" id="tablaC">
                 <thead>
 
             <tr>
@@ -69,10 +69,8 @@
                         <span  asp-validation-for="@Model.titulos[j].Anio_titulo"class="text-danger"></span>
                         
                         </td>
-                         <td>
-
-                                <button id="btnremoveC-@j" type="button" class="btn btn-danger btn-sm visible"
-                                    onclick="DeleteItem(this)">
+                         <td>  <button id="btnremoveC-@j" type="button" class="btn btn-danger btn-sm visible"
+                                    onclick="EliminarCamposFormacionAcademica(this)">
                                     Eliminar
                                 </button>
                             </td>
@@ -89,10 +87,10 @@
 
             <table class="table" id="tbexplaboral">
 
-                <h2>Experiencia Laboral</h2>
- <thead>
+                <h4>Experiencia Laboral</h4>
+           <thead>
 
-            <tr>
+              <tr>
                 <th> Nombre de la Empresa</th>
                 <th>Anio Inicio</th>
                 <th>Anio Final</th>
@@ -115,11 +113,17 @@
                   </td>
                
               
-              <td>@Html.EditorFor(e=>e.list_Experiencia_laboral[i].Anio_fin,new {htmlAttributes= new{@class="form-control"}})</td>
+              <td>@Html.EditorFor(e=>e.list_Experiencia_laboral[i].Anio_fin,new {htmlAttributes= new{@class="form-control"}})
               
           <span asp-validation-for="@Model.list_Experiencia_laboral[i].Anio_inicio,class="text-danger"></span>
-      
-      
+          </td>
+
+                        <td>
+                            <button id="btnremoveC-@i" type="button" class="btn btn-danger btn-sm visible"
+                                    onclick="EliminarCamposExpeLaboral(this) ">
+                                Eliminar
+                            </button>
+                        </td>
       
       </tr>
                 }

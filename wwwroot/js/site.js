@@ -5,7 +5,7 @@
 function AgregarCampos_titulo(btn) {
 
 
-    var table = document.getElementById("tabla")
+    var table = document.getElementById("tablaC")
     var fila = table.getElementsByTagName('tr');
 
     var codigoFila = fila[fila.length - 1].outerHTML;
@@ -38,3 +38,47 @@ function Agregar_Campos_Experiencia_Laboral(btn) {
     nuevaFila.innerHTML = codigoFila;
 
 }
+
+
+function EliminarCamposFormacionAcademica(btn) {
+
+    var tabla = document.getElementById('tablaC');
+    var fila = tabla.getElementsByTagName('tr');
+
+    if (fila.length == 2) {
+
+        alert("Al menos debe tener un titulo");
+        return;
+
+    }
+
+    var btnE = btn.id.replaceAll('btnremoveC-', '');
+    var btnInput = btnE + "__EsEliminado";
+    
+
+
+    $(btn).closest('tr').hide();
+
+}//tbexplaboral
+
+function EliminarCamposExpeLaboral(btn) {
+
+    var tabla = document.getElementById('tbexplaboral');
+    var fila = tabla.getElementsByTagName('tr');
+
+    if (fila.length == 2) {
+
+        alert("Al menos debe tener un titulo");
+        return;
+
+    }
+
+    var btnE = btn.id.replaceAll('btnremoveC-', '');
+    var btnInput = btnE + "__EsEliminado";
+    
+
+
+    $(btn).closest('tr').hide();
+
+}
+

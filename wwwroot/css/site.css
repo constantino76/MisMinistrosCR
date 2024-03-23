@@ -15,13 +15,14 @@ label {
 
 body {
    background-image: url('/image/gradiente.jpg');
+  
 }
 .ministerios{
 margin-top:2em
 
 
 }
-.col-md-6 {
+.col-md-10{
     margin-left:20px;
     background-color: aliceblue;
     /*width: 94% ;
@@ -32,11 +33,7 @@ margin-top:2em
     border : 2px solid  dotted*/
 
 }
- .col-md-4 form {
-   
-    margin-top: 16px;
-  
-}
+ 
     .form-group label {
         color: orangered
     }
@@ -60,5 +57,10 @@ form-group {
 }
 h4 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:blue
+    color:blue;
+    text-align:center;
+        
+}
+#tablaC, #tbexplaboral {
+    background-color: cadetblue;
 }
