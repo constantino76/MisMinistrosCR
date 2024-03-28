@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Name": "..\\AppiMinistros\\AppiMinistros.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "MisministrosCR_VERSION1.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

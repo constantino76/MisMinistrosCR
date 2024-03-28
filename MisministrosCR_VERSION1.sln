@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MisministrosCR_VERSION1", "MisministrosCR_VERSION1.csproj", "{74161565-B602-48F9-822E-0893D6BDE330}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MisministrosCR_VERSION1", "MisministrosCR_VERSION1.csproj", "{74161565-B602-48F9-822E-0893D6BDE330}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppiMinistros", "..\AppiMinistros\AppiMinistros.csproj", "{109631AB-2852-473B-82C7-A4D9718B1985}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{74161565-B602-48F9-822E-0893D6BDE330}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74161565-B602-48F9-822E-0893D6BDE330}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74161565-B602-48F9-822E-0893D6BDE330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{109631AB-2852-473B-82C7-A4D9718B1985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{109631AB-2852-473B-82C7-A4D9718B1985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{109631AB-2852-473B-82C7-A4D9718B1985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{109631AB-2852-473B-82C7-A4D9718B1985}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

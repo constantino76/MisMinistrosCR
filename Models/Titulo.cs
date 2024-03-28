@@ -3,6 +3,8 @@ namespace MisministrosCR_VERSION1.Models
 {
     public class Titulo
     {
+        [Key]
+        public int TituloId { get; set; }
         [Required(ErrorMessage = "Campo requerido")]
         [StringLength(150, ErrorMessage = "maximo 150 caracteres"), MinLength(10, ErrorMessage = "Minimo 10 caracteres")]
         public string GradoAcademico { get; set; }
@@ -12,8 +14,10 @@ namespace MisministrosCR_VERSION1.Models
         public string CentroUniversitario { get; set; }
 
         [Required(ErrorMessage = "Campo requerido")]
-        [Range(1900,2022)]
-        public string Anio_titulo { get; set; }
+        [Range(1900,2024)]
+        public int Anio_titulo { get; set; }
+        [Required(ErrorMessage = "Campo requerido")]
+        public String OferenteId { get; set; }
     }
     }
 

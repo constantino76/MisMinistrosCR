@@ -4,6 +4,7 @@ using Microsoft.Extensions.Caching.Memory;
 using MisministrosCR_VERSION1.Models;
 using MisministrosCR_VERSION1.Datos;
 using System.Diagnostics;
+using MisministrosCR_VERSION1.EnlaceAppi;
 
 namespace MisministrosCR_VERSION1.Controllers
 {
@@ -26,7 +27,7 @@ namespace MisministrosCR_VERSION1.Controllers
         public IActionResult Registro()
         {
             Oferente of = new Oferente();
-            of.titulos.Add(new Titulo (){ Anio_titulo = "0"});
+            of.titulos.Add(new Titulo() { Anio_titulo = 1900 });
             of.list_Experiencia_laboral.Add(new Experiencia_trabajo() {   Nombre_Empresa="Sardimar",Anio_inicio=2010 });
             ViewBag.Ministerios = getMinisterios();
           
@@ -34,12 +35,14 @@ namespace MisministrosCR_VERSION1.Controllers
         }
 
         [HttpPost]
-        public IActionResult Registro(Oferente oferente,String Ministerios)
+        public ActionResult Registro(Oferente oferente,String Ministerios)
         {
             oferente.Puesto = Ministerios;
-            Conexion cn = new Conexion(cache);
-            List<Oferente>listado= cn.obetenerOferentes();
-            listado.Add(oferente);
+            //Conexion cn = new Conexion(cache);
+            //List<Oferente>listado= cn.obetenerOferentes();
+            //listado.Add(oferente);
+            ConexionAppi cn = new ConexionAppi();
+            cn.Insertar(oferente);
             ViewBag.Ministerios = getMinisterios();
             return RedirectToAction("Registro");
         }
@@ -60,24 +63,24 @@ namespace MisministrosCR_VERSION1.Controllers
             {
 
             new SelectListItem{Text="Ministerio de agricultura y ganaderia (MAG)",
-             Value="1"},
+            },
             new SelectListItem{
                 Text="Ministerio de Ambiente, Energía y Telecomunicaciones (MINAET)",
-            Value="2"
+           
             },
             new SelectListItem{
             Text="Ministerio de justicia",
-            Value ="4" },
+            },
             new SelectListItem{
-              Text="Ministerio de Planificación y Política Económica (MIDEPLAN)",
-              Value="5" },
+              Text="Ministerio de Planificación y Política Económica (MIDEPLAN)"
 
+              },
             new SelectListItem{ Text="Ministerio de Ciencia y Tecnología (MICIT)",
-            Value="6"},
+            },
             new SelectListItem{
 
             Text="Ministerio de Planificación y Política Económica (MIDEPLAN)",
-             Value="7"
+             
             }
 
 

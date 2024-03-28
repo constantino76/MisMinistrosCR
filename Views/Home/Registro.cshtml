@@ -7,9 +7,9 @@
             <div  style ="border:none"asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group"> 
                     
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control"  placeholder="Cedula"/>
-                <span asp-validation-for="Id" class="text-danger"></span>
+                <label asp-for="OferenteId" class="control-label"></label>
+                <input asp-for="OferenteId" class="form-control"  placeholder="Cedula"/>
+                <span asp-validation-for="OferenteId"  class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Nombre" class="control-label"></label>
@@ -55,8 +55,9 @@
                 </thead>
                          
                     @for (int j = 0;j <Model.titulos.Count;j++)
-                    {
-                        <tr>
+                {
+                   
+                    <tr>
                             <td>@Html.EditorFor(x=>x.titulos[j].GradoAcademico, new {htmlAddtributes= new{@class="form-control"}})
                             <span asp-validation-form="@Model.titulos[j].GradoAcademico" class="text-danger"></span>
                             </td>
@@ -100,7 +101,7 @@
                 </thead>
 
                 @for(var i =0;i<Model.list_Experiencia_laboral.Count;i++){
-                
+                   
                 <tr>
                   <td>@Html.EditorFor(e=>e.list_Experiencia_laboral[i].Nombre_Empresa, new{htmlAttributes= new {@class="form-control"}})
                   <span asp-validation-for="@Model.list_Experiencia_laboral[i].Nombre_Empresa" class="text-danger"></span>
