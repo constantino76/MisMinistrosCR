@@ -12,11 +12,24 @@ html {
 label {
     border:none;
 }
+.boton-modal{
 
-body {
-   background-image: url('/image/gradiente.jpg');
-  
+    padding:40px !important;
+    background-color:white !important;
 }
+.moday-body {  background-color:crimson;
+}
+.boton-modal label {
+    padding: 10px 15px;
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+}
+    body {
+        /*background-image: url('/image/gradiente.jpg');*/
+        background: linear-gradient(to bottom, #2d57e2,#677bba);
+    }
 .ministerios{
 margin-top:2em
 

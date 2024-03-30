@@ -46,10 +46,41 @@ namespace MisministrosCR_VERSION1.Controllers
             ViewBag.Ministerios = getMinisterios();
             return RedirectToAction("Registro");
         }
-        public IActionResult EditarOferente(String id ="") { 
+        public async  Task<IActionResult> EditarOferente(String id ="") {
+            ViewBag.Ministerios = getMinisterios();
+
+            if (!String.IsNullOrEmpty(id)) {
+
+
+                ConexionAppi cn = new ConexionAppi();
+              
+
+                List<Oferente> list = new List<Oferente>();
+                var oferente = await cn.Buscar(id);
+
+                if (oferente==null) {
+                    ViewBag.resultado = "0";
+                }
+                 
+                return View(oferente);
+            }
+            return View();
        
-        return View();
+       
         }
+        [HttpPost]
+        public IActionResult EditarOferente(Oferente oferente ,String Ministerios) {
+
+            oferente.Puesto = Ministerios;
+           
+            ConexionAppi cn = new ConexionAppi();
+            cn.Actualizar(oferente);
+            ViewBag.Ministerios = getMinisterios();
+
+            return View();  
+        }
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

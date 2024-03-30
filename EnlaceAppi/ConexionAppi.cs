@@ -4,9 +4,34 @@ using System.Text;
 
 namespace MisministrosCR_VERSION1.EnlaceAppi
 {
-    public class ConexionAppi {
+    public class ConexionAppi
+    {
+
+        public async Task<Oferente> Buscar(String id) {
+
+
+            Oferente oferente = new Oferente();
+            String  url = "http://localhost:5103/api/Oferentes/"+ id;
+            using var apirest = new HttpClient();
+            HttpResponseMessage respuesta = await apirest.GetAsync(url);
+
+
+
+            if (respuesta.IsSuccessStatusCode)
+            {
+                var Respuesta = respuesta.Content.ReadAsStringAsync().Result;
+                oferente = JsonConvert.DeserializeObject<Oferente>(Respuesta);
+                return oferente;
+            }
+
+            return null;
+
+        }
+
+
         // Insertar clientes
-        public  async Task<Boolean> Insertar(Oferente oferente) {
+        public async Task<Boolean> Insertar(Oferente oferente)
+        {
 
             asignarId(oferente);
             asignarId_(oferente);
@@ -46,22 +71,26 @@ namespace MisministrosCR_VERSION1.EnlaceAppi
 
 
             return true;
-        
+
         }
-        public void asignarId(Oferente oferente) {
+        public void asignarId(Oferente oferente)
+        {
 
-            foreach (var n in oferente.titulos) {
+            foreach (var n in oferente.titulos)
+            {
 
 
-                if (n.OferenteId == null) {
+                if (n.OferenteId == null)
+                {
                     n.OferenteId = oferente.OferenteId;
-                
+
                 }
-            
+
             }
-        
+
         }
-        public void asignarId_(Oferente oferente){
+        public void asignarId_(Oferente oferente)
+        {
 
             foreach (var n in oferente.list_Experiencia_laboral)
             {
@@ -78,6 +107,40 @@ namespace MisministrosCR_VERSION1.EnlaceAppi
 
 
         }
-   
+
+        public async Task<bool> Actualizar(Oferente oferente)
+        {
+            asignarId(oferente);
+            asignarId_(oferente);
+
+            string url = "http://localhost:5103/api/Oferentes/" + oferente.OferenteId;
+
+            // Convertir el Oferente a JSON
+            string json = JsonConvert.SerializeObject(oferente);
+
+            // Crear una solicitud HTTP
+            using (var httpClient = new HttpClient())
+            {
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                var response = await httpClient.PutAsync(url, content);
+
+                // Verificar el estado de la respuesta
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+                else
+                {
+                    // Manejar el error
+                    Console.WriteLine("Error al enviar el Oferente: " + response.StatusCode);
+                    return false;
+                }
+
+
+                return false;
+
+            }
+        }
     }
-}
+    }
+
