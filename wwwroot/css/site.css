@@ -75,5 +75,18 @@ h4 {
         
 }
 #tablaC, #tbexplaboral {
+
     background-color: cadetblue;
+}
+
+/*aplicar estilos  al modal */
+#t-body {
+    cursor:pointer;
+    color: lightseagreen;
+    background-color:crimson;
+
+}
+#modal-container {
+
+    background-color:darkslategray
 }

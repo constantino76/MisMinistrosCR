@@ -5,6 +5,7 @@ using MisministrosCR_VERSION1.Models;
 using MisministrosCR_VERSION1.Datos;
 using System.Diagnostics;
 using MisministrosCR_VERSION1.EnlaceAppi;
+using MisministrosCR_VERSION1.Servicios;
 
 namespace MisministrosCR_VERSION1.Controllers
 {
@@ -23,9 +24,21 @@ namespace MisministrosCR_VERSION1.Controllers
         {
             return View();
         }
+        public ActionResult InicioSesion() {
 
+
+            return View();
+        
+        }
+        [HttpPost]
+
+        public ActionResult InicioSesion(String correo, String id) {
+
+
+            return View();
+        }
         public IActionResult Registro()
-        {
+        { 
             Oferente of = new Oferente();
             of.titulos.Add(new Titulo() { Anio_titulo = 1900 });
             of.list_Experiencia_laboral.Add(new Experiencia_trabajo() {   Nombre_Empresa="Sardimar",Anio_inicio=2010 });
@@ -36,12 +49,13 @@ namespace MisministrosCR_VERSION1.Controllers
 
         [HttpPost]
         public ActionResult Registro(Oferente oferente,String Ministerios)
-        {
+        {  
             oferente.Puesto = Ministerios;
             //Conexion cn = new Conexion(cache);
             //List<Oferente>listado= cn.obetenerOferentes();
             //listado.Add(oferente);
-            ConexionAppi cn = new ConexionAppi();
+          
+            OferenteHijo cn = new OferenteHijo();
             cn.Insertar(oferente);
             ViewBag.Ministerios = getMinisterios();
             return RedirectToAction("Registro");
@@ -69,14 +83,19 @@ namespace MisministrosCR_VERSION1.Controllers
        
         }
         [HttpPost]
-        public IActionResult EditarOferente(Oferente oferente ,String Ministerios) {
+        public async Task<IActionResult> EditarOferente(Oferente oferente ,String Ministerios) {
 
             oferente.Puesto = Ministerios;
            
             ConexionAppi cn = new ConexionAppi();
-            cn.Actualizar(oferente);
+          bool respuesta =  await cn.Actualizar(oferente);
             ViewBag.Ministerios = getMinisterios();
 
+            if (respuesta)
+            {
+                ViewBag.Respuesta = "1";
+            }
+            else { ViewBag.Respuesta = "0"; }
             return View();  
         }
 

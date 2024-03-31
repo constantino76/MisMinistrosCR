@@ -10,6 +10,35 @@
     <input type="submit" class="btn btn-secondary" value=" Buscar" />
 
 </form>
+
+@{
+    if (ViewBag.Respuesta != null)
+
+    {
+
+        if (ViewBag.Respuesta == "1")
+          {
+            <div class="resp1" style="color :green;border: 2px solid white"><p>  :) Datos Actualizados correctamente </p> </div>
+
+
+
+        }
+        if (ViewBag.Respuesta == "0")
+        {
+            <div class="resp1" style=" color:red; background-color:gray"><p> Ocurrio un erros al actualizar los datos </p> </div>
+
+
+
+        }
+
+
+    
+    
+    }
+
+
+
+}
 @if (Model != null) { 
 
 <h4>Oferente</h4>
