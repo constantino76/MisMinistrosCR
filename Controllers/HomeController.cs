@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Caching.Memory;
 using MisministrosCR_VERSION1.Models;
-using MisministrosCR_VERSION1.Datos;
+
 using System.Diagnostics;
 using MisministrosCR_VERSION1.EnlaceAppi;
 using MisministrosCR_VERSION1.Servicios;
@@ -24,19 +24,19 @@ namespace MisministrosCR_VERSION1.Controllers
         {
             return View();
         }
-        public ActionResult InicioSesion() {
+        //public ActionResult InicioSesion() {
 
 
-            return View();
+        //    return View();
         
-        }
-        [HttpPost]
+        //}
+        //[HttpPost]
 
-        public ActionResult InicioSesion(String correo, String id) {
+        //public ActionResult InicioSesion(String correo, String id) {
 
 
-            return View();
-        }
+        //    return View();
+        //}
         public IActionResult Registro()
         { 
             Oferente of = new Oferente();
@@ -65,15 +65,15 @@ namespace MisministrosCR_VERSION1.Controllers
 
             if (!String.IsNullOrEmpty(id)) {
 
-
-                ConexionAppi cn = new ConexionAppi();
+                OferenteHijo cn = new OferenteHijo();
+               
               
 
                 List<Oferente> list = new List<Oferente>();
                 var oferente = await cn.Buscar(id);
 
                 if (oferente==null) {
-                    ViewBag.resultado = "0";
+                    ViewBag.Respuesta = "0";
                 }
                  
                 return View(oferente);
@@ -105,6 +105,9 @@ namespace MisministrosCR_VERSION1.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
+
 
 
         private List<SelectListItem> getMinisterios()
