@@ -18,12 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\proyectosweb\MisMinistrosCR
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/proyectosweb/MisMinistrosCR/Views/ExperienciaLaboral/RegistroExperienciaLaboral.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJpZW5jaWFMYWJvcmFsXFJlZ2lzdHJvRXhwZXJpZW5jaWFMYWJvcmFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/proyectosweb/MisMinistrosCR/Views/Home/EditarOferente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0YXJPZmVyZW50ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/proyectosweb/MisMinistrosCR/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/proyectosweb/MisMinistrosCR/Views/Home/ListarOferentes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0YXJPZmVyZW50ZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/proyectosweb/MisMinistrosCR/Views/Home/Privacy.cshtml]

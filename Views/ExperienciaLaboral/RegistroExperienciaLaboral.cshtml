@@ -1,0 +1,66 @@
+﻿@model MisministrosCR_VERSION1.Models.Experiencia_trabajo
+
+@{
+    ViewData["Title"] = "RegistroExperienciaLaboral";
+}
+
+<h1>RegistroExperienciaLaboral</h1>
+
+<h4>Experiencia_trabajo</h4>
+<form -controller="ExperienciaLaboral" asp-action="index" method="get">
+
+    @Html.TextBox("id", "", new { @class = "form-control" })
+    <input type="submit" class="btn btn-secondary" value=" Buscar" />
+
+
+ </form>
+
+ @if(ViewBag.Nombre!=null && Model!=null){
+<div class="row"> <label>ID</label> @Model.OferenteId <label>Nombre :</label> @ViewBag.Nombre </div>
+ }
+<div class="row">
+
+
+
+    <div class="col-md-4">
+        <form asp-action="RegistroExperienciaLaboral">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Idtrabajo" class="control-label"></label>
+                <input asp-for="Idtrabajo" class="form-control" />
+                <span asp-validation-for="Idtrabajo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nombre_Empresa" class="control-label"></label>
+                <input asp-for="Nombre_Empresa" class="form-control" />
+                <span asp-validation-for="Nombre_Empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Anio_inicio" class="control-label"></label>
+                <input asp-for="Anio_inicio" class="form-control" />
+                <span asp-validation-for="Anio_inicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Anio_fin" class="control-label"></label>
+                <input asp-for="Anio_fin" class="form-control" />
+                <span asp-validation-for="Anio_fin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OferenteId" class="control-label"></label>
+                <input asp-for="OferenteId" class="form-control" />
+                <span asp-validation-for="OferenteId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

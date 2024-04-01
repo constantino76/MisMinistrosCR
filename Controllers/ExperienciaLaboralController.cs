@@ -1,83 +1,123 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MisministrosCR_VERSION1.Models;
+using MisministrosCR_VERSION1.Servicios;
 
 namespace MisministrosCR_VERSION1.Controllers
 {
     public class ExperienciaLaboralController : Controller
     {
+        private readonly IOferente ioferente;
+
+
+
+        public ExperienciaLaboralController(IOferente _ioferente) { 
+        
+        
+        ioferente=_ioferente;   
+        
+        }
         // GET: ExperienciaLaboralController
-        public ActionResult Index()
+        public async Task<IActionResult> Index(string id="")
         {
-            return View();
+            //Oferente  oferente = new Oferente();
+            //OferenteHijo cn = new OferenteHijo();
+
+            if (!String.IsNullOrEmpty(id)) { 
+            
+            
+               Oferente  oferente=  await ioferente.Buscar(id);
+                if (oferente != null)
+                {
+                    ViewBag.Nombre = oferente.Nombre;
+
+                    return RedirectToAction("RegistroExperienciaLaboral");
+                }
+            }
+            return  View();
+          
         }
 
         // GET: ExperienciaLaboralController/Details/5
-        public ActionResult Details(int id)
+        public ActionResult RegistroExperienciaLaboral()
         {
             return View();
         }
 
-        // GET: ExperienciaLaboralController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: ExperienciaLaboralController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
+
+        public ActionResult RegistroExperienciaLaboral(Experiencia_trabajo _Trabajo) {
+             return RedirectToAction("index");
+
+
+
+
+
             }
-            catch
+
+
+            // GET: ExperienciaLaboralController/Create
+            public ActionResult RegistroTitulos()
             {
                 return View();
             }
-        }
 
-        // GET: ExperienciaLaboralController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: ExperienciaLaboralController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
+            // POST: ExperienciaLaboralController/Create
+            [HttpPost]
+            [ValidateAntiForgeryToken]
+            public ActionResult Create(IFormCollection collection)
             {
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                catch
+                {
+                    return View();
+                }
             }
-            catch
-            {
-                return View();
-            }
-        }
 
-        // GET: ExperienciaLaboralController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: ExperienciaLaboralController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
+            // GET: ExperienciaLaboralController/Edit/5
+            public ActionResult Edit(int id)
             {
                 return View();
             }
+
+            // POST: ExperienciaLaboralController/Edit/5
+            [HttpPost]
+            [ValidateAntiForgeryToken]
+            public ActionResult Edit(int id, IFormCollection collection)
+            {
+                try
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                catch
+                {
+                    return View();
+                }
+            }
+
+            // GET: ExperienciaLaboralController/Delete/5
+            public ActionResult Delete(int id)
+            {
+                return View();
+            }
+
+            // POST: ExperienciaLaboralController/Delete/5
+            [HttpPost]
+            [ValidateAntiForgeryToken]
+            public ActionResult Delete(int id, IFormCollection collection)
+            {
+                try
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                catch
+                {
+                    return View();
+                }
+            }
         }
-    }
-}
+    } 
+

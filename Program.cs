@@ -1,8 +1,12 @@
+using MisministrosCR_VERSION1.Servicios;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<IOferente, OferenteHijo>();
 builder.Services.AddControllersWithViews();
 
+//builder.Services.AddScoped<IServicioExperiencia, ServicioHijo>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

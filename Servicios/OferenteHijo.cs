@@ -10,7 +10,7 @@ namespace MisministrosCR_VERSION1.Servicios
     {
       
 
-        public async Task<ActionResult<Oferente>> Buscar(string id)
+        public async Task<Oferente> Buscar(string id)
         {
 
             Oferente oferente = new Oferente();
@@ -24,7 +24,7 @@ namespace MisministrosCR_VERSION1.Servicios
             {
                 var Respuesta = respuesta.Content.ReadAsStringAsync().Result;
                 oferente = JsonConvert.DeserializeObject<Oferente>(Respuesta);
-                return oferente;
+                return   oferente;
             }
 
             return null;
@@ -63,7 +63,7 @@ namespace MisministrosCR_VERSION1.Servicios
             }
             return false;
         }
-            public async Task<Oferente> VerOferentes()
+            public async Task<List<Oferente>> VerOferentes()
             {
                 String url = "http://localhost:5103/api/Oferentes/";
                 using var apirest = new HttpClient();
@@ -74,7 +74,7 @@ namespace MisministrosCR_VERSION1.Servicios
                 if (respuesta.IsSuccessStatusCode)
                 {
                     var Respuesta = respuesta.Content.ReadAsStringAsync().Result;
-                    var lista = JsonConvert.DeserializeObject<Oferente>(Respuesta);
+                    var lista = JsonConvert.DeserializeObject<List<Oferente>>(Respuesta);
                     return lista;
                 }
 

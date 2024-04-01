@@ -4,20 +4,20 @@ using Microsoft.Extensions.Caching.Memory;
 using MisministrosCR_VERSION1.Models;
 
 using System.Diagnostics;
-using MisministrosCR_VERSION1.EnlaceAppi;
+
 using MisministrosCR_VERSION1.Servicios;
 
 namespace MisministrosCR_VERSION1.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IMemoryCache cache;
-        private readonly ILogger<HomeController> _logger;
+        //private readonly IMemoryCache cache;
+        //private readonly ILogger<HomeController> _logger;
+        private readonly IOferente ioferente;
 
-        public HomeController(ILogger<HomeController> logger,IMemoryCache _cache)
+        public HomeController( IOferente _oferente)
         {
-            _logger = logger;
-            cache= _cache;  
+            ioferente = _oferente;  
         }
 
         public IActionResult Index()
@@ -28,7 +28,7 @@ namespace MisministrosCR_VERSION1.Controllers
 
 
         //    return View();
-        
+
         //}
         //[HttpPost]
 
@@ -37,6 +37,14 @@ namespace MisministrosCR_VERSION1.Controllers
 
         //    return View();
         //}
+
+        public async Task<ActionResult> ListarOferentes() {
+            OferenteHijo cn = new OferenteHijo();
+
+            var oferente = cn.VerOferentes();
+            return View();
+        
+        }
         public IActionResult Registro()
         { 
             Oferente of = new Oferente();
@@ -55,47 +63,50 @@ namespace MisministrosCR_VERSION1.Controllers
             //List<Oferente>listado= cn.obetenerOferentes();
             //listado.Add(oferente);
           
-            OferenteHijo cn = new OferenteHijo();
-            cn.Insertar(oferente);
+            
+            ioferente.Insertar(oferente);
             ViewBag.Ministerios = getMinisterios();
             return RedirectToAction("Registro");
         }
         public async  Task<IActionResult> EditarOferente(String id ="") {
             ViewBag.Ministerios = getMinisterios();
+            
+            
+            //var oferente = new Oferente();
+            //Validamos que el id venga con informacion 
+            if (String.IsNullOrEmpty(id)) {
 
-            if (!String.IsNullOrEmpty(id)) {
+                return View();
 
-                OferenteHijo cn = new OferenteHijo();
-               
-              
 
-                List<Oferente> list = new List<Oferente>();
-                var oferente = await cn.Buscar(id);
+                //var oferente = await  ioferente.Buscar(id);
 
-                if (oferente==null) {
-                    ViewBag.Respuesta = "0";
-                }
-                 
-                return View(oferente);
             }
-            return View();
-       
+
+        Oferente  oferente =  await  ioferente.Buscar(id);
+          ////validamos  si  el oferente ha sido encontrado
+            if (oferente == null) { return View();
+            
+            
+            
+            }
+       return View(oferente);
        
         }
         [HttpPost]
         public async Task<IActionResult> EditarOferente(Oferente oferente ,String Ministerios) {
 
             oferente.Puesto = Ministerios;
-           
-            ConexionAppi cn = new ConexionAppi();
-          bool respuesta =  await cn.Actualizar(oferente);
+            //OferenteHijo cn = new OferenteHijo();
+            
+          bool respuesta =  await ioferente.Actualizar(oferente);
             ViewBag.Ministerios = getMinisterios();
 
-            if (respuesta)
-            {
-                ViewBag.Respuesta = "1";
-            }
-            else { ViewBag.Respuesta = "0"; }
+            //if (respuesta)
+            //{
+            //    ViewBag.Respuesta = "1";
+            //}
+            //else { ViewBag.Respuesta = "0"; }
             return View();  
         }
 
