@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddScoped<IOferente, OferenteHijo>();
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 //builder.Services.AddScoped<IServicioExperiencia, ServicioHijo>();
 var app = builder.Build();

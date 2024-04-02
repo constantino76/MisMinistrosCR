@@ -14,7 +14,7 @@ build_property.EnableComHosting =
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\proyectosweb\MisMinistrosCR
 build_property._RazorSourceGeneratorDebug = 
 
@@ -32,10 +32,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/proyectosweb/MisMinistrosCR/Views/Home/ListarOferentes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0YXJPZmVyZW50ZXMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/proyectosweb/MisMinistrosCR/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/proyectosweb/MisMinistrosCR/Views/Home/Registro.cshtml]

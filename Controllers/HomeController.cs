@@ -37,13 +37,18 @@ namespace MisministrosCR_VERSION1.Controllers
 
         //    return View();
         //}
+        public ActionResult ListarOferentes() {
 
-        public async Task<ActionResult> ListarOferentes() {
-            OferenteHijo cn = new OferenteHijo();
-
-            var oferente = cn.VerOferentes();
             return View();
         
+        }
+        public async Task<JsonResult> ListarPostulantes() {
+            OferenteHijo cn = new OferenteHijo();
+            List<Oferente> listoferentes = new List<Oferente>();
+             listoferentes = await  cn.VerOferentes();
+            return Json(new { data =listoferentes });
+
+            int a = 0;
         }
         public IActionResult Registro()
         { 
