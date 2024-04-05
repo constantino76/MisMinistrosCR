@@ -3,36 +3,54 @@
   "WorkspaceRootPath": "C:\\proyectosweb\\MisMinistrosCR\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{109631AB-2852-473B-82C7-A4D9718B1985}|..\\AppiMinistros\\AppiMinistros.csproj|c:\\proyectosweb\\appiministros\\controllers\\experiencia_trabajocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\views\\home\\listaroferentes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:views\\home\\listaroferentes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\controllers\\experiencialaboralcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:controllers\\experiencialaboralcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\servicios\\oferentehijo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:servicios\\oferentehijo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{109631AB-2852-473B-82C7-A4D9718B1985}|..\\AppiMinistros\\AppiMinistros.csproj|c:\\proyectosweb\\appiministros\\controllers\\oferentescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\models\\oferente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:models\\oferente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\views\\home\\listaroferentes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:views\\home\\listaroferentes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\views\\home\\editaroferente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:views\\home\\editaroferente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\views\\experiencialaboral\\buscaroferente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:views\\experiencialaboral\\buscaroferente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\models\\titulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:models\\titulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,14 +69,7 @@
       "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:servicios\\servicioexperiencialaboral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\controllers\\experiencialaboralcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:controllers\\experiencialaboralcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{109631AB-2852-473B-82C7-A4D9718B1985}|..\\AppiMinistros\\AppiMinistros.csproj|c:\\proyectosweb\\appiministros\\appiministros.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{109631AB-2852-473B-82C7-A4D9718B1985}|..\\AppiMinistros\\AppiMinistros.csproj|c:\\proyectosweb\\appiministros\\controllers\\oferentescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\views\\experiencialaboral\\registroexperiencialaboral.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -96,10 +107,6 @@
       "AbsoluteMoniker": "D:0:0:{109631AB-2852-473B-82C7-A4D9718B1985}|..\\AppiMinistros\\AppiMinistros.csproj|c:\\proyectosweb\\appiministros\\models\\oferente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|c:\\proyectosweb\\misministroscr\\models\\titulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74161565-B602-48F9-822E-0893D6BDE330}|MisministrosCR_VERSION1.csproj|solutionrelative:models\\titulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{109631AB-2852-473B-82C7-A4D9718B1985}|..\\AppiMinistros\\AppiMinistros.csproj|c:\\proyectosweb\\appiministros\\data\\oferente_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -118,11 +125,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "AppiMinistros.csproj",
               "DocumentMoniker": "C:\\proyectosweb\\AppiMinistros\\AppiMinistros.csproj",
               "RelativeDocumentMoniker": "..\\AppiMinistros\\AppiMinistros.csproj",
@@ -137,79 +144,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ListarOferentes.cshtml",
-              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\ListarOferentes.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\ListarOferentes.cshtml",
-              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\ListarOferentes.cshtml",
-              "RelativeToolTip": "Views\\Home\\ListarOferentes.cshtml",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAACAAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-01T22:03:44.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OferenteHijo.cs",
-              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Servicios\\OferenteHijo.cs",
-              "RelativeDocumentMoniker": "Servicios\\OferenteHijo.cs",
-              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Servicios\\OferenteHijo.cs",
-              "RelativeToolTip": "Servicios\\OferenteHijo.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAkwFEAAAAMAAAA",
+              "Title": "ExperienciaLaboralController.cs",
+              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Controllers\\ExperienciaLaboralController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExperienciaLaboralController.cs",
+              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Controllers\\ExperienciaLaboralController.cs",
+              "RelativeToolTip": "Controllers\\ExperienciaLaboralController.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAAAHcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T12:02:09.856Z",
+              "WhenOpened": "2024-03-31T17:46:54.271Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAkwC0AAAAMAAAA",
+              "Title": "OferenteHijo.cs",
+              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Servicios\\OferenteHijo.cs",
+              "RelativeDocumentMoniker": "Servicios\\OferenteHijo.cs",
+              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Servicios\\OferenteHijo.cs",
+              "RelativeToolTip": "Servicios\\OferenteHijo.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAkwB4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T11:54:21.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EditarOferente.cshtml",
-              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\EditarOferente.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\EditarOferente.cshtml",
-              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\EditarOferente.cshtml",
-              "RelativeToolTip": "Views\\Home\\EditarOferente.cshtml",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAABcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-31T23:54:53.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAABIAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-30T16:51:56.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T00:49:43.589Z",
+              "WhenOpened": "2024-04-01T12:02:09.856Z",
               "EditorCaption": ""
             },
             {
@@ -227,33 +182,150 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAkwC0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T11:54:21.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Experiencia_trabajoController.cs",
+              "DocumentMoniker": "C:\\proyectosweb\\AppiMinistros\\Controllers\\Experiencia_trabajoController.cs",
+              "RelativeDocumentMoniker": "..\\AppiMinistros\\Controllers\\Experiencia_trabajoController.cs",
+              "ToolTip": "C:\\proyectosweb\\AppiMinistros\\Controllers\\Experiencia_trabajoController.cs",
+              "RelativeToolTip": "..\\AppiMinistros\\Controllers\\Experiencia_trabajoController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T16:04:49.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OferentesController.cs",
+              "DocumentMoniker": "C:\\proyectosweb\\AppiMinistros\\Controllers\\OferentesController.cs",
+              "RelativeDocumentMoniker": "..\\AppiMinistros\\Controllers\\OferentesController.cs",
+              "ToolTip": "C:\\proyectosweb\\AppiMinistros\\Controllers\\OferentesController.cs",
+              "RelativeToolTip": "..\\AppiMinistros\\Controllers\\OferentesController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAACUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T15:40:16.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "site.css",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAAAGIAAAARAAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAAAFgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-03-30T22:46:31.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAACsAAAAAAAAAAAAAADIAAAADAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAACUAAACgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-31T15:19:14.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListarOferentes.cshtml",
+              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\ListarOferentes.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ListarOferentes.cshtml",
+              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\ListarOferentes.cshtml",
+              "RelativeToolTip": "Views\\Home\\ListarOferentes.cshtml",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAACwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-01T22:03:44.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditarOferente.cshtml",
+              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\EditarOferente.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\EditarOferente.cshtml",
+              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\EditarOferente.cshtml",
+              "RelativeToolTip": "Views\\Home\\EditarOferente.cshtml",
+              "ViewState": "AQIAALwAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-31T23:54:53.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Titulo.cs",
+              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Models\\Titulo.cs",
+              "RelativeDocumentMoniker": "Models\\Titulo.cs",
+              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Models\\Titulo.cs",
+              "RelativeToolTip": "Models\\Titulo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T00:49:43.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "BuscarOferente.cshtml",
+              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\ExperienciaLaboral\\BuscarOferente.cshtml",
+              "RelativeDocumentMoniker": "Views\\ExperienciaLaboral\\BuscarOferente.cshtml",
+              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Views\\ExperienciaLaboral\\BuscarOferente.cshtml",
+              "RelativeToolTip": "Views\\ExperienciaLaboral\\BuscarOferente.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB8AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-04T16:08:17.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T00:49:43.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-30T16:51:56.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "jquery.js",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\lib\\jquery\\dist\\jquery.js",
               "RelativeDocumentMoniker": "wwwroot\\lib\\jquery\\dist\\jquery.js",
@@ -266,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Registro.cshtml",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Home\\Registro.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Registro.cshtml",
@@ -279,20 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ExperienciaLaboralController.cs",
-              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Controllers\\ExperienciaLaboralController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ExperienciaLaboralController.cs",
-              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Controllers\\ExperienciaLaboralController.cs",
-              "RelativeToolTip": "Controllers\\ExperienciaLaboralController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAkwB8AAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:46:54.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "ServicioExperienciaLaboral.cs",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Servicios\\ServicioExperienciaLaboral.cs",
               "RelativeDocumentMoniker": "Servicios\\ServicioExperienciaLaboral.cs",
@@ -305,20 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "OferentesController.cs",
-              "DocumentMoniker": "C:\\proyectosweb\\AppiMinistros\\Controllers\\OferentesController.cs",
-              "RelativeDocumentMoniker": "..\\AppiMinistros\\Controllers\\OferentesController.cs",
-              "ToolTip": "C:\\proyectosweb\\AppiMinistros\\Controllers\\OferentesController.cs",
-              "RelativeToolTip": "..\\AppiMinistros\\Controllers\\OferentesController.cs",
-              "ViewState": "AQIAAHcAAAAAAAAAAAAkwIYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T15:40:16.861Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "RegistroExperienciaLaboral.cshtml",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\ExperienciaLaboral\\RegistroExperienciaLaboral.cshtml",
               "RelativeDocumentMoniker": "Views\\ExperienciaLaboral\\RegistroExperienciaLaboral.cshtml",
@@ -331,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "_Layout.cshtml.css",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Shared\\_Layout.cshtml.css",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml.css",
@@ -344,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "FormacionAcademicaController.cs",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Controllers\\FormacionAcademicaController.cs",
               "RelativeDocumentMoniker": "Controllers\\FormacionAcademicaController.cs",
@@ -357,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -370,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -383,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "20240330231102_NameMigracion2.cs",
               "DocumentMoniker": "C:\\proyectosweb\\AppiMinistros\\Migrations\\20240330231102_NameMigracion2.cs",
               "RelativeDocumentMoniker": "..\\AppiMinistros\\Migrations\\20240330231102_NameMigracion2.cs",
@@ -396,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "20240327110342_initial.cs",
               "DocumentMoniker": "C:\\proyectosweb\\AppiMinistros\\Migrations\\20240327110342_initial.cs",
               "RelativeDocumentMoniker": "..\\AppiMinistros\\Migrations\\20240327110342_initial.cs",
@@ -410,19 +456,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "Titulo.cs",
-              "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Models\\Titulo.cs",
-              "RelativeDocumentMoniker": "Models\\Titulo.cs",
-              "ToolTip": "C:\\proyectosweb\\MisMinistrosCR\\Models\\Titulo.cs",
-              "RelativeToolTip": "Models\\Titulo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T00:49:43.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
               "Title": "Experiencia_trabajo.cs",
               "DocumentMoniker": "C:\\proyectosweb\\AppiMinistros\\Models\\Experiencia_trabajo.cs",
               "RelativeDocumentMoniker": "..\\AppiMinistros\\Models\\Experiencia_trabajo.cs",
@@ -435,7 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "Titulo.cs",
               "DocumentMoniker": "C:\\proyectosweb\\AppiMinistros\\Models\\Titulo.cs",
               "RelativeDocumentMoniker": "..\\AppiMinistros\\Models\\Titulo.cs",
@@ -448,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "Oferente.cs",
               "DocumentMoniker": "C:\\proyectosweb\\AppiMinistros\\Models\\Oferente.cs",
               "RelativeDocumentMoniker": "..\\AppiMinistros\\Models\\Oferente.cs",
@@ -461,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Oferente_DbContext.cs",
               "DocumentMoniker": "C:\\proyectosweb\\AppiMinistros\\Data\\Oferente_DbContext.cs",
               "RelativeDocumentMoniker": "..\\AppiMinistros\\Data\\Oferente_DbContext.cs",
@@ -474,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "Experiencia_trabajo.cs",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\Models\\Experiencia_trabajo.cs",
               "RelativeDocumentMoniker": "Models\\Experiencia_trabajo.cs",
@@ -487,7 +520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "site.js",
               "DocumentMoniker": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",

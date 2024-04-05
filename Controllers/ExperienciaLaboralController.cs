@@ -18,7 +18,7 @@ namespace MisministrosCR_VERSION1.Controllers
         
         }
         // GET: ExperienciaLaboralController
-        public async Task<IActionResult> Index(string id="")
+        public async Task<IActionResult> BuscarOferente(string id="")
         {
             //Oferente  oferente = new Oferente();
             //OferenteHijo cn = new OferenteHijo();
@@ -29,9 +29,9 @@ namespace MisministrosCR_VERSION1.Controllers
                Oferente  oferente=  await ioferente.Buscar(id);
                 if (oferente != null)
                 {
-                    ViewBag.Nombre = oferente.Nombre;
+                   // ViewBag.Nombre = oferente.Nombre;
 
-                    return RedirectToAction("RegistroExperienciaLaboral");
+                    return View();
                 }
             }
             return  View();

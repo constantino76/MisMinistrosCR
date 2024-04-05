@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\image\\gradiente.jpg"
     },
     {
+      "Id": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\js\\es-MX.json",
+      "PackagePath": "staticwebassets\\js\\es-MX.json"
+    },
+    {
       "Id": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

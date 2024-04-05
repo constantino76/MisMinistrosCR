@@ -1,5 +1,5 @@
 ﻿@* @model IEnumerable<MisministrosCR_VERSION1.Models.Oferente> *@
-  ViewData["Title"] = "Privacy Policy";
+ 
 
 
 @section Estilos {
@@ -8,14 +8,10 @@
 }
 
 
-<h1>@ViewData["Title"]</h1>
-
-<p>Use this page to detail your site's privacy policy.</p>
 
 
-@{
-    ViewData["Title"] = "ListarOferentes";
-}
+
+
 
 <h1>ListarOferentes</h1>
 
@@ -37,6 +33,7 @@
 
 @section Scripts {
     <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+  
     <script>
         $(document).ready(function () {
             $('#tboferente').DataTable({
@@ -46,6 +43,7 @@
                     "type":"GET",
                     "datatype":"json",
                 },
+              
                 columns: [
                 { data: "oferenteId" },
                 { data: "nombre" },
@@ -55,6 +53,10 @@
                 { data: "puesto"},
                 { data: "estado" }
                 ]
+                , 
+                "language": {
+                    "url": "https://cdn.datatables.net/plug-ins/2.0.3/i18n/es-ES.json"
+                }
             });
         });
 
