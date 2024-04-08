@@ -121,3 +121,15 @@ thed tr>th {
 
     color:white;
 }
+
+.form-control {
+    padding-right: 25px;
+}
+
+.bi-search {
+    position: absolute;
+ 
+    right: 20px;
+    top: 40%;
+    transform: translateY(-50%);
+}
