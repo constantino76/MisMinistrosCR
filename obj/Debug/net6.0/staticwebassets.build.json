@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UHBkOT2SggwrSt0Sbel1MX5648BonSO7SMrw6g3eV+o=",
+  "Hash": "NwMBBL4T1ycmSTSq5rVGGSMeaiZXAN+YEiybVso+a9o=",
   "Source": "MisministrosCR_VERSION1",
   "BasePath": "_content/MisministrosCR_VERSION1",
   "Mode": "Default",
@@ -93,6 +93,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\image\\formacion.png",
+      "SourceId": "MisministrosCR_VERSION1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\",
+      "BasePath": "_content/MisministrosCR_VERSION1",
+      "RelativePath": "image/formacion.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\formacion.png"
+    },
+    {
       "Identity": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\image\\gradiente.jpg",
       "SourceId": "MisministrosCR_VERSION1",
       "SourceType": "Discovered",
@@ -110,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\gradiente.jpg"
+    },
+    {
+      "Identity": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\image\\menu.png",
+      "SourceId": "MisministrosCR_VERSION1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\",
+      "BasePath": "_content/MisministrosCR_VERSION1",
+      "RelativePath": "image/menu.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\menu.png"
     },
     {
       "Identity": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\js\\es-MX.json",

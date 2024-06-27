@@ -7,8 +7,9 @@ a.navbar-brand[b-w79umc1err] {
   word-break: break-all;
 }
 
-a[b-w79umc1err] {
-  color: #0077cc;
+.dropdown-item[b-w79umc1err] {
+  
+  color: fuchsia !important
 }
 
 .btn-primary[b-w79umc1err] {

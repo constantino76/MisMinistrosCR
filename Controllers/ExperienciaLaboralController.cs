@@ -41,6 +41,24 @@ namespace MisministrosCR_VERSION1.Controllers
             return  View();
           
         }
+        public ActionResult BuscarOferenteEdit(String id = "") {
+            if (!String.IsNullOrEmpty(id)) {
+
+                return RedirectToAction("EditarExperienciaLaboral", new { OfrenteId = id});
+
+            }
+            return View();
+        }
+        public ActionResult EditarExperienciaLaboral(String OferenteId) {
+
+           
+            return View();
+        
+        
+        }
+
+
+
 
         // GET: ExperienciaLaboralController/Details/5
         public ActionResult RegistroExperienciaLaboral(String id ,string Nombre)
@@ -54,15 +72,15 @@ namespace MisministrosCR_VERSION1.Controllers
 
         public ActionResult RegistroExperienciaLaboral(String Nombreempresa, String Anioinicio,String Aniofinal) {
 
-            //Experiencia_trabajo _trabajo = new Experiencia_trabajo();
-            //_trabajo.OferenteId=OferenteId; 
-            //_trabajo.Nombre_Empresa=Nombre_Empresa;
-            //_trabajo.Anio_inicio = anioinicio;
-            //_trabajo.Anio_fin = aniofin;
+           Experiencia_trabajo _trabajo = new Experiencia_trabajo();
+    
+           _trabajo.Nombre_Empresa=Nombreempresa;
+           _trabajo.Anio_inicio =Convert.ToInt32( Anioinicio);
+            _trabajo.Anio_fin =  Convert.ToInt32(Aniofinal);
 
-            //expelaboral.Insertar(_trabajo);
-
-            return Content("<h2>Registro agregado satisfactoriamente</h2>");
+           
+            return View();
+         
 
 
 
@@ -72,11 +90,21 @@ namespace MisministrosCR_VERSION1.Controllers
 
 
             // GET: ExperienciaLaboralController/Create
-            public ActionResult RegistroTitulos()
+            public ActionResult Editar(String id="")
             {
+
+            if (!String.IsNullOrEmpty(id)) { 
+            
+            
+            }
                 return View();
             }
+        [HttpPost]
+        public ActionResult Editar(Experiencia_trabajo exp) {
 
+            return View();
+        
+        }
             // POST: ExperienciaLaboralController/Create
             [HttpPost]
             [ValidateAntiForgeryToken]

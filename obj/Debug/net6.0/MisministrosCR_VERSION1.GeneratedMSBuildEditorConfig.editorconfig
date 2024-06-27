@@ -26,20 +26,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJpZW5jaWFMYWJvcmFsXFJlZ2lzdHJvRXhwZXJpZW5jaWFMYWJvcmFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/proyectosweb/MisMinistrosCR/Views/Home/EditarOferente.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0YXJPZmVyZW50ZS5jc2h0bWw=
+[C:/proyectosweb/MisMinistrosCR/Views/Oferenteservicios/EditarOferente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcmVudGVzZXJ2aWNpb3NcRWRpdGFyT2ZlcmVudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/proyectosweb/MisMinistrosCR/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/proyectosweb/MisMinistrosCR/Views/Oferenteservicios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcmVudGVzZXJ2aWNpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/proyectosweb/MisMinistrosCR/Views/Home/ListarOferentes.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0YXJPZmVyZW50ZXMuY3NodG1s
+[C:/proyectosweb/MisMinistrosCR/Views/Oferenteservicios/ListarOferentes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcmVudGVzZXJ2aWNpb3NcTGlzdGFyT2ZlcmVudGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/proyectosweb/MisMinistrosCR/Views/Home/Registro.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Ryby5jc2h0bWw=
+[C:/proyectosweb/MisMinistrosCR/Views/Oferenteservicios/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcmVudGVzZXJ2aWNpb3NcUmVnaXN0cm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/proyectosweb/MisMinistrosCR/Views/Shared/Error.cshtml]

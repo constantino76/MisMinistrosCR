@@ -8,7 +8,8 @@
       },
       {
         "Name": "MisministrosCR_VERSION1.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": ""
       }
     ]
   }

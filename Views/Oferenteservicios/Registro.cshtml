@@ -4,14 +4,14 @@
 
 
 
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
 <h4>Registro de oferentes</h4>
 <div class="row" id="row" >
     <div class="col-md-12" >
         
-        <form     asp-action="Registro">
+        <form   asp-controller="Oferenteservicios"  asp-action="Registro">
             <div  style ="border:none"asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group"> 
                     
@@ -178,14 +178,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<script>
 
-    $(document).ready(function () {
-        $('#windown-modal').modal('show');
-    });
-
-
-</script>
 
 
 <link style="stylesheet" href="~/css/site.css">

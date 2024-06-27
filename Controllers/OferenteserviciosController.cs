@@ -9,13 +9,13 @@ using MisministrosCR_VERSION1.Servicios;
 
 namespace MisministrosCR_VERSION1.Controllers
 {
-    public class HomeController : Controller
+    public class OferenteserviciosController : Controller
     {
         //private readonly IMemoryCache cache;
         //private readonly ILogger<HomeController> _logger;
         private readonly IOferente ioferente;
 
-        public HomeController( IOferente _oferente)
+        public OferenteserviciosController( IOferente _oferente)
         {
             ioferente = _oferente;  
         }
@@ -48,7 +48,7 @@ namespace MisministrosCR_VERSION1.Controllers
              listoferentes = await  cn.VerOferentes();
             return Json(new { data =listoferentes });
 
-            int a = 0;
+           
         }
         public IActionResult Registro()
         { 
@@ -90,7 +90,9 @@ namespace MisministrosCR_VERSION1.Controllers
 
         Oferente  oferente =  await  ioferente.Buscar(id);
           ////validamos  si  el oferente ha sido encontrado
-            if (oferente == null) { return View();
+            if (oferente == null) {
+                
+                return Content("<h2> No se encontro el usuario</h2>");
             
             
             
@@ -99,7 +101,7 @@ namespace MisministrosCR_VERSION1.Controllers
        
         }
         [HttpPost]
-        public async Task<IActionResult> EditarOferente(Oferente oferente ,String Ministerios) {
+        public async Task<IActionResult> EditarOferente(Oferente oferente, String Ministerios) {
 
             oferente.Puesto = Ministerios;
             //OferenteHijo cn = new OferenteHijo();

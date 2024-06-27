@@ -1,0 +1,181 @@
+﻿@model MisministrosCR_VERSION1.Models.Oferente
+
+@{
+    ViewData["Title"] = "EditarOferente";
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css">
+<script src="~/js/site.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+ <div  class="form-father"> 
+ <form action="EditarOferente" method="get" class="mt-2 form-sonn">
+    <div class="contenedor-padre">
+    @Html.TextBox("id", "", new { @class = "form-control" })
+    <input type="submit" class="buscar" value="Buscar registro" />
+    </div>
+</form>
+</div>
+
+@{
+    if (ViewBag.Respuesta != null)
+    {
+        if (ViewBag.Respuesta == "1")
+        {
+            <div class="resp1" style="color: green; border: 2px solid white;">
+                <p>: ) Datos Actualizados correctamente</p>
+            </div>
+        }
+        if (ViewBag.Respuesta == "0")
+        {
+            <div class="resp1" style="color: red; background-color: gray;">
+                <p>Ocurrió un error al actualizar los datos</p>
+            </div>
+        }
+    }
+}
+
+@if (Model != null)
+{
+    <h4>Oferente</h4>
+    <div class="row">
+        <div class="col-md-12">
+            <form asp-action="EditarOferente">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="OferenteId" class="control-label"></label>
+                    <input asp-for="OferenteId" class="form-control" />
+                    <span asp-validation-for="OferenteId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Nombre" class="control-label"></label>
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FechaNacimiento" class="control-label"></label>
+                    <input asp-for="FechaNacimiento" class="form-control" />
+                    <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Telefono" class="control-label"></label>
+                    <input asp-for="Telefono" class="form-control" />
+                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    @Html.DropDownList("Ministerios", (List<SelectListItem>)ViewBag.Ministerios)
+                    <span asp-validation-for="Puesto" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Estado" class="control-label"></label>
+                    <input asp-for="Estado" class="form-control" />
+                    <span asp-validation-for="Estado" class="text-danger"></span>
+                </div>
+
+                <h4>Información Académica</h4>
+                <table class="table" id="tablaC">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Grado Académico</th>
+                            <th>Centro Universitario</th>
+                            <th>Año de titulación</th>
+                            <th>
+                                <button id="btnagregar" type="button" onclick="AgregarCampos_titulo(this)" class="btn btn-success">Agregar nuevo registro</button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (int j = 0; j < Model.titulos.Count; j++)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.EditorFor(x => x.titulos[j].TituloId, new { htmlAttributes = new { @class = "form-control" } })
+                                    <span asp-validation-for="@Model.titulos[j].TituloId" class="text-danger"></span>
+                                </td>
+                                <td>
+                                    @Html.EditorFor(x => x.titulos[j].GradoAcademico, new { htmlAttributes = new { @class = "form-control" } })
+                                    <span asp-validation-for="@Model.titulos[j].GradoAcademico" class="text-danger"></span>
+                                </td>
+                                <td>
+                                    @Html.EditorFor(x => x.titulos[j].CentroUniversitario, new { htmlAttributes = new { @class = "form-control" } })
+                                    <span asp-validation-for="@Model.titulos[j].CentroUniversitario" class="text-danger"></span>
+                                </td>
+                                <td>
+                                    @Html.EditorFor(x => x.titulos[j].Anio_titulo, new { htmlAttributes = new { @class = "form-control" } })
+                                    <span asp-validation-for="@Model.titulos[j].Anio_titulo" class="text-danger"></span>
+                                </td>
+                                <td>
+                                    <button id="btnremoveC-@j" type="button" class="btn btn-danger btn-sm" onclick="EliminarCamposFormacionAcademica(this)">Eliminar</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <h4>Experiencia Laboral</h4>
+                <table class="table" id="tbexplaboral">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre de la Empresa</th>
+                            <th>Año Inicio</th>
+                            <th>Año Final</th>
+                            <th>
+                                <button id="btnagregar" type="button" onclick="Agregar_Campos_Experiencia_Laboral(this)" class="btn btn-success">Agregar nuevo registro</button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (var i = 0; i < Model.list_Experiencia_laboral.Count; i++)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.EditorFor(e => e.list_Experiencia_laboral[i].Idtrabajo, new { htmlAttributes = new { @class = "form-control" } })
+                                    <span asp-validation-for="@Model.list_Experiencia_laboral[i].Idtrabajo" class="text-danger"></span>
+                                </td>
+                                <td>
+                                    @Html.EditorFor(e => e.list_Experiencia_laboral[i].Nombre_Empresa, new { htmlAttributes = new { @class = "form-control" } })
+                                    <span asp-validation-for="@Model.list_Experiencia_laboral[i].Nombre_Empresa" class="text-danger"></span>
+                                </td>
+                                <td>
+                                    @Html.EditorFor(e => e.list_Experiencia_laboral[i].Anio_inicio, new { htmlAttributes = new { @class = "form-control" } })
+                                    <span asp-validation-for="@Model.list_Experiencia_laboral[i].Anio_inicio" class="text-danger"></span>
+                                </td>
+                                <td>
+                                    @Html.EditorFor(e => e.list_Experiencia_laboral[i].Anio_fin, new { htmlAttributes = new { @class = "form-control" } })
+                                    <span asp-validation-for="@Model.list_Experiencia_laboral[i].Anio_fin" class="text-danger"></span>
+                                </td>
+                                <td>
+                                    <button id="btnremoveC-@i" type="button" class="btn btn-danger btn-sm" onclick="EliminarCamposExpeLaboral(this)">Eliminar</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <div class="form-group">
+                    <input type="submit" value="Guardar" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <a asp-action="Index">Volver a la lista</a>
+    </div>
+}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var Nombre = $('#Nombre').val();
+        console.log("El nombre es " + Nombre);
+    });
+</script>

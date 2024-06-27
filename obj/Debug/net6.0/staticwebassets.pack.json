@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\image\\formacion.png",
+      "PackagePath": "staticwebassets\\image\\formacion.png"
+    },
+    {
       "Id": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\image\\gradiente.jpg",
       "PackagePath": "staticwebassets\\image\\gradiente.jpg"
+    },
+    {
+      "Id": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\image\\menu.png",
+      "PackagePath": "staticwebassets\\image\\menu.png"
     },
     {
       "Id": "C:\\proyectosweb\\MisMinistrosCR\\wwwroot\\js\\es-MX.json",

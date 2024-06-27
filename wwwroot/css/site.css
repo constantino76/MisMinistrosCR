@@ -38,13 +38,7 @@ margin-top:2em
 .col-md-12{
     margin-left:20px;
     background-color: aliceblue;
-    /*width: 94% ;
-    margin-top:12px;
-    margin-bottom:4px;
-    height:92%;
-    border-radius:14px;
-    border : 2px solid  dotted*/
-
+ 
 }
  
     .form-group label {
@@ -112,7 +106,7 @@ table {
     border :2px solid white;
     border-radius:12px;
 }
-    table > thead {
+    table thead{
 
 
         background-color:green;
@@ -133,3 +127,104 @@ thed tr>th {
     top: 40%;
     transform: translateY(-50%);
 }
+/*   estilos para el menu **/
+.navbar-collapse {
+    justify-content: space-around !important;
+    width:50% !important;
+    
+}
+
+/*  estilos para el formulario de busqueda  */
+.contenedor-padre {
+    display:flex;
+    align-content:space-around !important;
+    background-color:antiquewhite !important
+
+}
+
+.contenedor-padre input{ width: 90%
+}
+    .buscar {  background-color:fuchsia;
+               
+               width:35% !important
+    }
+
+
+
+    /*  estilos para  el layout */
+header {
+    background-color: #dc3545; /* Bootstrap's "danger" color */
+    color: #fff; /* White text color */
+
+    display: flex; /* Allow horizontal layout */
+    flex-direction:column;
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Align items vertically */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* Bottom border */
+}
+.menu ul{  width:30%
+}
+
+.menu {
+    background-color: rgb(92, 62, 92);
+    flex-grow: -1;
+    width: 100%;
+    display: flex;
+    float:right
+}
+
+    .menu ul {
+        border-radius: 4px;
+        width: 10%;
+        list-style: none;
+        justify-content: space-around;
+       
+    }
+
+        .menu ul ul {
+            display: none;
+        }
+
+a { text-decoration:none;
+    color:white;
+}
+
+/*   poner estilos a los enlaces cuando se pase el mouse encima */
+
+.menu ul li:hover ul {
+    position: absolute;
+    background-color: red;
+    list-style: none;
+    color: gold;
+    display: block;
+  
+}
+.bi {  width:30px;
+       padding-right:4px
+      
+}
+
+/*estilo para imagenes */
+
+img { width:25px;
+      height:25px;
+    
+}
+ul li ul li { cursor:pointer;
+     color:blue;
+}
+
+/* estilos para el formulario de busqueda*/
+
+.form-sonn input {  opacity:0.4;
+}
+.form-father {  background-color:purple;
+}
+
+tbody { background-color:black;
+}
+    tbody tr:hover td { 
+        cursor:copy;
+        color:gold
+    }
