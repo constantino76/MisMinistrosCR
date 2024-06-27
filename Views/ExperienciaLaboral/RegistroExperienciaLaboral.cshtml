@@ -7,7 +7,7 @@
 <link href="~/css/site.css" rel="stylesheet" />
 
  <div class="row mt-6 search-page">
-    <form action="BuscarOferente">
+    <form method="get" asp-action="BuscarOferente">
         <div class="alert alert-primary" role="alert">
             @Html.TextBox("id", "", new { @class = "form-control" })
 
@@ -22,8 +22,8 @@
 
 
 <div class="alert alert-primary">
-    <strong>Id: @ViewBag.id</strong>
-    <strong>nombre @ViewBag.Nombre</strong>
+    <strong>Id: @ViewBag.id</strong><span></span>
+    <strong>nombre: @ViewBag.Nombre</strong>
 
 
 </div>
@@ -34,22 +34,29 @@
 
 
         <form class="form">
+
+                <div class="form-group">
+                   
+                    <input id="IdOferente" type="text" value="@ViewBag.id" class="form-control" hidden />
+
+                    <span></span>
+                </div>
             <div class="form-group">
-                    <label for="nombre_empresa" class="control-label"></label>
-                <input id="nombre_empresa" type="text" class="form-control" placeholder="Nombre de la Empresa" required />
+                    <label for="Nombreempresa" class="control-label"></label>
+                    <input id="Nombreempresa" type="text" class="form-control" placeholder="Nombre de la Empresa" required />
 
                     <span ></span>
             </div>
 
             <div class="form-group">
-                <label for="anioinicio" class="control-label"> Anio de inicio</label>
-                <input id="anioinicio" type="number" class="form-control"/>
+                <label for="Anioinicio" class="control-label"> Anio de inicio</label>
+                <input id="Anioinicio" type="number" class="form-control"/>
             <span> </span>
           </div>
 
             <div class="form-group">
-                <label for="aniofin" class="control-label" >  Anio final</label>
-                <input id="aniofin" type="number" class="form-control" />
+                    <label for="Aniofinal" class="control-label">  Anio final</label>
+                    <input id="Aniofinal" type="number" class="form-control" />
                 <span> </span>
             </div>
           <button  class="btn btn-secondary"id="btn-registro">Registrar</button>
@@ -59,8 +66,8 @@
 </div>
 
     </div>
-  @*   @* importamos jquery *@
-@* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  @*   importamos jquery *@
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
    <script>
        $(document).ready(function () {
@@ -70,9 +77,9 @@
            
                e.preventDefault();
 
-               var nombreempresa = $('#nombre_empresa').val();
-               var anioinicio = $('#anioinicio').val();
-               var aniofinal = $('#aniofin').val();
+               var nombreempresa = $('#Nombreempresa').val();
+               var anioinicio = $('#Anioinicio').val();
+               var aniofinal = $('#Aniofinal').val();
                var data = {
                 Nombreempresa: nombreempresa,
                    Anioinicio: anioinicio,
@@ -100,5 +107,5 @@
 
 
 
-   </script> *@
+   </script>
    

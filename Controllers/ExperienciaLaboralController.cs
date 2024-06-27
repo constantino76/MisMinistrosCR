@@ -9,7 +9,7 @@ namespace MisministrosCR_VERSION1.Controllers
 {
     public class ExperienciaLaboralController : Controller
     {
-        private readonly IOferente ioferente;
+       
 
         private readonly IServicioExperiencialaboral  expelaboral;
 
@@ -29,13 +29,13 @@ namespace MisministrosCR_VERSION1.Controllers
             if (!String.IsNullOrEmpty(id)) { 
             
             
-               var  oferente=  await ioferente.Buscar(id);
+               var  oferente=  await expelaboral.Buscar(id);
                 if (oferente != null)
                 {
-                   ViewBag.Id = oferente.OferenteId;
+                   ViewBag.id = oferente.OferenteId;
                     ViewBag.Nombre = oferente.Nombre;
                     // retornamos  en caso de encontrar un oferente con el id ingreado   a otra vista para registrar sus datos
-                    return RedirectToAction("RegistroExperienciaLaboral" ,new { id, oferente.Nombre});
+                    return RedirectToAction("RegistroExperienciaLaboral" ,new { id });
                 }
             }
             return  View();
@@ -61,16 +61,22 @@ namespace MisministrosCR_VERSION1.Controllers
 
 
         // GET: ExperienciaLaboralController/Details/5
-        public ActionResult RegistroExperienciaLaboral(String id ,string Nombre)
+        public  async Task<ActionResult> RegistroExperienciaLaboral(String id ="")
         {
-            ViewBag.Id = id;
-            ViewBag.Nombre=Nombre;  
+            if (!String.IsNullOrEmpty(id))
+            {
+                var oferente = await expelaboral.Buscar(id);
+                ViewBag.id = oferente.OferenteId;
+               
+
+                return View();  
+            }
             return View();
         }
 
         [HttpPost]
 
-        public ActionResult RegistroExperienciaLaboral(String Nombreempresa, String Anioinicio,String Aniofinal) {
+        public ActionResult RegistroExperienciaLaboral(String IdOferente, String Nombreempresa, String Anioinicio,String Aniofinal ) {
 
            Experiencia_trabajo _trabajo = new Experiencia_trabajo();
     

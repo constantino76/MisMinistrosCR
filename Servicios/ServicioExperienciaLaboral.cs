@@ -12,9 +12,23 @@ namespace MisministrosCR_VERSION1.Servicios
             throw new NotImplementedException();
         }
 
-        public Task<Oferente> Buscar(string id)
+        public  async Task<Oferente> Buscar(string id)
         {
-            throw new NotImplementedException();
+            Oferente oferente = new Oferente();
+            String url = "http://localhost:5103/api/Experiencia_trabajo/" + id;
+            using var apirest = new HttpClient();
+            HttpResponseMessage respuesta = await apirest.GetAsync(url);
+
+
+
+            if (respuesta.IsSuccessStatusCode)
+            {
+                var Respuesta = respuesta.Content.ReadAsStringAsync().Result;
+                oferente = JsonConvert.DeserializeObject<Oferente>(Respuesta);
+                return oferente;
+            }
+
+            return null;
         }
 
         public async Task<bool> Insertar(Experiencia_trabajo exptrabajo)
