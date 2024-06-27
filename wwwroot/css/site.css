@@ -26,8 +26,8 @@ label {
     border-radius: 12px;
     cursor: pointer;
 }
-    body {
-        /*background-image: url('/image/gradiente.jpg');*/
+    .footer {
+        background-image: url('/image/gradiente.jpg');
         background: linear-gradient(to bottom, #2d57e2,#677bba);
     }
 .ministerios{
@@ -198,6 +198,7 @@ a { text-decoration:none;
     list-style: none;
     color: gold;
     display: block;
+    z-index:10;
   
 }
 .bi {  width:30px;
@@ -228,3 +229,12 @@ tbody { background-color:black;
         cursor:copy;
         color:gold
     }
+    
+    /* estilos para la pagina de  exp laboral**/
+
+.search-page{  opacity:0.5;
+z-index:5
+
+}
+
+.footer{width:100%}
