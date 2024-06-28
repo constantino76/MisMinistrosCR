@@ -67,7 +67,7 @@ namespace MisministrosCR_VERSION1.Controllers
             {
                 var oferente = await expelaboral.Buscar(id);
                 ViewBag.id = oferente.OferenteId;
-               
+                ViewBag.nombre = oferente.Nombre;
 
                 return View();  
             }
@@ -79,12 +79,13 @@ namespace MisministrosCR_VERSION1.Controllers
         public ActionResult RegistroExperienciaLaboral(String IdOferente, String Nombreempresa, String Anioinicio,String Aniofinal ) {
 
            Experiencia_trabajo _trabajo = new Experiencia_trabajo();
-    
+            _trabajo.OferenteId = IdOferente;
            _trabajo.Nombre_Empresa=Nombreempresa;
            _trabajo.Anio_inicio =Convert.ToInt32( Anioinicio);
             _trabajo.Anio_fin =  Convert.ToInt32(Aniofinal);
+            expelaboral.Insertar(_trabajo);
 
-           
+
             return View();
          
 

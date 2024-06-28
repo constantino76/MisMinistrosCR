@@ -21,9 +21,9 @@
 </div>
 
 
-<div class="alert alert-primary">
+<div class="alert alert-primary p-2">
     <strong>Id: @ViewBag.id</strong><span></span>
-    <strong>nombre: @ViewBag.Nombre</strong>
+    <strong>nombre: @ViewBag.nombre</strong>
 
 
 </div>
@@ -36,8 +36,7 @@
         <form class="form">
 
                 <div class="form-group">
-                   
-                    <input id="IdOferente" type="text" value="@ViewBag.id" class="form-control" hidden />
+                    <input id="IdOferente" type="text" value="@ViewBag.id"  hidden class="form-control"/>
 
                     <span></span>
                 </div>
@@ -76,11 +75,12 @@
            $('#btn-registro').click(function (e) { 
            
                e.preventDefault();
-
+               var idoferente = $('#IdOferente').val();
                var nombreempresa = $('#Nombreempresa').val();
                var anioinicio = $('#Anioinicio').val();
                var aniofinal = $('#Aniofinal').val();
                var data = {
+                   idOferente:idoferente,
                 Nombreempresa: nombreempresa,
                    Anioinicio: anioinicio,
                    Aniofinal: aniofinal
@@ -92,7 +92,7 @@
                type:"POST",
                data:data,
                  success: function (data) { 
-                   
+                     console.log("datos a enviar ",data);
                        if (data.success) { 
                        console.log("status.CodeOk")
                        

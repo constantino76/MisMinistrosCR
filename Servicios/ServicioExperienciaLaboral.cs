@@ -33,27 +33,35 @@ namespace MisministrosCR_VERSION1.Servicios
 
         public async Task<bool> Insertar(Experiencia_trabajo exptrabajo)
         {
-            String url = "http://localhost:5103/api/Experiencia_Trabajo";
+            // URL de la API
+            string url = "http://localhost:5103/api/Experiencia_trabajo";
 
-            string json =JsonConvert.SerializeObject(exptrabajo);
+            // Convertir el Oferente a JSON
+            string json = JsonConvert.SerializeObject(exptrabajo);
 
-            using ( var httpclient = new HttpClient()) {
+            // Crear una solicitud HTTP
+            using (var httpClient = new HttpClient())
+            {
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                var response = await httpClient.PostAsync(url, content);
 
-               var content =  new  StringContent(json, Encoding.UTF8, "application/json");
-
-                var respuesta = httpclient.PostAsync(url,content);
-
-
-                if (respuesta.IsCompleted) {
-
-
-                    return   true;
-                
+                // Verificar el estado de la respuesta
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
                 }
+                else
+                {
+                    // Manejar el error
+                    Console.WriteLine("Error al enviar el Oferente: " + response.StatusCode);
 
+                }
             }
             return false;
-                
+
         }
+            
+                
+        
     }
 }
