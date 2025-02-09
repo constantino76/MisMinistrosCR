@@ -5,12 +5,9 @@ using System.Text;
 
 namespace MisministrosCR_VERSION1.Servicios
 {
-    public class ServicioExperienciaLaboral : IServicioExperiencialaboral
+    public class ServicioExperienciaLaboral :IServicioExperiencialaboral
     {
-        public Task<Oferente> Actualizar()
-        {
-            throw new NotImplementedException();
-        }
+        
 
         public  async Task<Oferente> Buscar(string id)
         {
@@ -60,8 +57,12 @@ namespace MisministrosCR_VERSION1.Servicios
             return false;
 
         }
-            
-                
-        
+
+        public Task<Oferente> Actualizar_ExpLaboral() {
+
+
+            return null;
+        }
+
     }
 }

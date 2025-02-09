@@ -41,21 +41,7 @@ namespace MisministrosCR_VERSION1.Controllers
             return  View();
           
         }
-        public ActionResult BuscarOferenteEdit(String id = "") {
-            if (!String.IsNullOrEmpty(id)) {
-
-                return RedirectToAction("EditarExperienciaLaboral", new { OfrenteId = id});
-
-            }
-            return View();
-        }
-        public ActionResult EditarExperienciaLaboral(String OferenteId) {
-
-           
-            return View();
         
-        
-        }
 
 
 
@@ -65,7 +51,7 @@ namespace MisministrosCR_VERSION1.Controllers
         {
             if (!String.IsNullOrEmpty(id))
             {
-                var oferente = await expelaboral.Buscar(id);
+                var oferente = await expelaboral.Buscar(id);  
                 ViewBag.id = oferente.OferenteId;
                 ViewBag.nombre = oferente.Nombre;
 
@@ -97,7 +83,7 @@ namespace MisministrosCR_VERSION1.Controllers
 
 
             // GET: ExperienciaLaboralController/Create
-            public ActionResult Editar(String id="")
+            public ActionResult Eliminarexplaboral(String id="")
             {
 
             if (!String.IsNullOrEmpty(id)) { 
@@ -107,7 +93,7 @@ namespace MisministrosCR_VERSION1.Controllers
                 return View();
             }
         [HttpPost]
-        public ActionResult Editar(Experiencia_trabajo exp) {
+        public ActionResult Eliminarexplaboral(Experiencia_trabajo exp) {
 
             return View();
         

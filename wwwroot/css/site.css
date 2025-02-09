@@ -37,7 +37,6 @@ margin-top:2em
 }
 .col-md-12{
     margin-left:20px;
-    background-color: aliceblue;
  
 }
  
@@ -70,8 +69,6 @@ h4 {
 }
 
 #row {
-    background-color:aliceblue;
-    padding:4px;
     border: 3px solid white;
     border-radius :12px
 
@@ -194,11 +191,11 @@ a { text-decoration:none;
 
 .menu ul li:hover ul {
     position: absolute;
-    background-color: red;
+    background-color: black;
     list-style: none;
-    color: gold;
+  
     display: block;
-    z-index:10;
+    z-index:5;
   
 }
 .bi {  width:30px;
@@ -212,10 +209,10 @@ img { width:25px;
       height:25px;
     
 }
-ul li ul li { cursor:pointer;
+/*ul li ul li { cursor:pointer;
      color:blue;
 }
-
+*/
 /* estilos para el formulario de busqueda*/
 
 .form-sonn input {  opacity:0.4;
@@ -225,10 +222,10 @@ ul li ul li { cursor:pointer;
 
 tbody { background-color:black;
 }
-    tbody tr:hover td { 
+    /*tbody tr:hover td { 
         cursor:copy;
         color:gold
-    }
+    }*/
     
     /* estilos para la pagina de  exp laboral**/
 

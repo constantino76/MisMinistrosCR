@@ -1,0 +1,59 @@
+﻿@model MisministrosCR_VERSION1.Models.Experiencia_trabajo
+
+@{
+    ViewData["Title"] = "BuscarOferenteEdit";
+}
+<link  href="~/css/site.css" rel="stylesheet"/>
+<h1>BuscarOferenteEdit</h1>
+
+<div   class="form-father">
+    <form action="BuscarOferenteEdit" method="get" class=" form mt-2">
+        <div class="contenedor-padre">
+            @Html.TextBox("id", "", new { @class = "form-control" })
+            <input type="submit" class="buscar" value="Buscar registro" /><i class="bi bi-search   "></i>
+        </div>
+    </form> 
+</div>
+
+<h4>Experiencia_trabajo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="BuscarOferenteEdit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Idtrabajo" class="control-label"></label>
+                <input asp-for="Idtrabajo" class="form-control" />
+                <span asp-validation-for="Idtrabajo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nombre_Empresa" class="control-label"></label>
+                <input asp-for="Nombre_Empresa" class="form-control" />
+                <span asp-validation-for="Nombre_Empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Anio_inicio" class="control-label"></label>
+                <input asp-for="Anio_inicio" class="form-control" />
+                <span asp-validation-for="Anio_inicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Anio_fin" class="control-label"></label>
+                <input asp-for="Anio_fin" class="form-control" />
+                <span asp-validation-for="Anio_fin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OferenteId" class="control-label"></label>
+                <input asp-for="OferenteId" class="form-control" />
+                <span asp-validation-for="OferenteId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
